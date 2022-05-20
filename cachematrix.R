@@ -45,9 +45,8 @@ cacheSolve <- function(x, ...) {
   }
   
   data <- x$getMatrix()
-  n <- solve(data)  %*% data
+  n <- solve(data)  
   x$setinvmat(n)
   n   
 }
-
 
